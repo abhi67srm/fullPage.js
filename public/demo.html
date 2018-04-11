@@ -9,14 +9,56 @@
 	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
 	<meta name="Resource-type" content="Document" />
 
-
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="javascript.fullPage.css" />
 
 
+
 	<style>
+	/* Adding animated text */
+	.ml11 {
+  font-weight: 900;
+  font-size: 3.5em;
+	margin-top: 60px;
+	z-index: 5;
+	opacity: 0.4;
+	color: #ff5511;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff205;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+span#color{
+	color: #fff205;
+}
+	/* Added animated text */
 	body{
 		overflow: hidden;
 		background: #111;
@@ -85,6 +127,7 @@
 			top: 50%;
 			transform: translateY(-50%);
 			text-align: center;
+			z-index: 1;
 		}
 
 		/* Section 1
@@ -93,7 +136,7 @@
 			background-color: #111;
 		}
 		#section0 h1{
-			color: #111;
+			color: skyblue;
 		}
 		#section0 p{
 			color: #111;
@@ -125,7 +168,21 @@
 		#section2 p{
 			opacity: 0.6;
 		}
+		#nav2{
+			z-index: 200;
+			margin-top: 60px;
+			margin-left: inherit;
+			margin-right: inherit;
+			margin-bottom: auto;
+			padding: 5px;
+			opacity: 0.3;
+			border: 1px solid chocolate;
+			text-align: center;
+			flow: right;
+
+		}
 	</style>
+
 </head>
 <body>
 
@@ -133,41 +190,48 @@
 <div id="fullpage">
 	<div class="section " id="section0">
 		<div class="content">
-			<div id="constellation">
+			<!--<div id="nav2">-->
+		  <!--	<h1 id=nav2>ILLUMINATECH</h1>-->
+				<!--Adding some -->
+				<h1 class="ml11">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters" id="color">ILLUMINATECH</span>
+  </span>
+</h1>
+				<!--Added -->
+		  <!--</div>-->
 			 <canvas></canvas>
-			</div>
-			<script src="script.js"></script>
-			<h1></h1>
-			<p></p>
+
 		</div>
 	</div>
 	<div class="section" id="section1">
 		<div class="slide" id="slide1">
 			<div class="content">
-				<h1>No need for jQuery</h1>
+				<h1>Home</h1>
 				<p>
-					5 Kb gzipped!!
+					heyy ninja
 				</p>
 				<p>
-		      		Improve the loading time of your site!
+		      	woahh woahh
 				</p>
 			</div>
 		</div>
 		<div class="slide" id="slide2">
 			<div class="content">
-				<h1>Slides too!</h1>
+				<h1>Our Mission</h1>
 			</div>
 		</div>
 		<div class="slide" id="slide2">
 			<div class="content">
-				<h1>More slides!</h1>
+				<h1>Contact Us!</h1>
 			</div>
 		</div>
 	</div>
 	<div class="section" id="section2">
 		<div class="content">
-			<h1>Compatible</h1>
-			<p>IE 8+ support.</p>
+			<h1>Our Works</h1>
+			<p>We the best</p>
 		</div>
 	</div>
 </div>
@@ -182,5 +246,11 @@
 
 </script>
 <script src="test/script.js"></script>
+<script src="test/logo-script.js"></script>
+
+</script>
+<script type="text/javascript">
+
+  </script>
 </body>
 </html>
