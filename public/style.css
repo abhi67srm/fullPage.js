@@ -1,0 +1,245 @@
+/* Adding some nav tag -->*/
+/*first page*/
+div > div > div > div#top{
+  float: right;
+  margin-left: 900px;
+
+}
+div > div > div > div#top{
+  position: absolute;
+  margin-top: 30px;
+}
+div > div > div > div >span#home{
+  margin: 5px;
+  padding: 5px;
+  text-decoration: underline;
+  font-size: 35px;
+}
+div> div >div#logo-text{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font-size: 50%;
+}
+/*About us*/
+div > div > div >div.content{
+  margin:20px 200px 50px 200px;
+  padding: 20px;
+  border: 1px solid white;
+  height: 75%;
+}
+div > div > div >div#page-two{
+  margin: 10px;
+  padding:0px;
+  text-align: justify;
+  font-family:sans-serif;
+}
+div > div>div#lastPage{
+  margin:30px;
+  padding: 10px;
+  border: 1px solid skyblue;
+}
+/* Styling icon
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa:hover{
+  opacity: 0.7;
+}
+.fa-google {
+    background: #55ACEE;
+    color: #db3236;
+}
+.fa-instagram {
+
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: #fb3958;
+}
+.fa-github {
+    background: #333;
+    color: white;
+}
+
+/* Adding some nav tag -->*/
+body {
+  overflow: hidden;
+  background: #111;
+}
+
+/* Reset CSS
+ * --------------------------------------- */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+caption,
+th {
+  text-align: left;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+body {
+  font-family: arial, helvetica;
+  color: #F2F2F2;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 1;
+
+}
+
+/* Section 1
+ * --------------------------------------- */
+
+#section0 {
+
+  background-color: #111;
+}
+
+#section0 h1 {
+  color: skyblue;
+}
+
+#section0 p {
+  color: #111;
+  opacity: 0.8;
+}
+
+
+/* Section 2
+ * --------------------------------------- */
+
+#section1 {
+  background-color: grey;
+}
+
+#section1 h1 {
+  color: #fff;
+}
+
+#section1 p {
+  opacity: 0.8;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+
+#section2 {
+  background-color: #2C3E50;
+}
+
+#section2 h1 {
+  color: #F2F2F2;
+}
+
+#section2 p {
+  opacity: 0.6;
+}
