@@ -12,7 +12,6 @@ div > div > div > div#top{
 div > div > div > div >span#home{
   margin: 5px;
   padding: 5px;
-  text-decoration: underline;
   font-size: 35px;
 }
 div> div >div#logo-text{
@@ -34,11 +33,7 @@ div > div > div >div#page-two{
   text-align: justify;
   font-family:sans-serif;
 }
-div > div>div#lastPage{
-  margin:30px;
-  padding: 10px;
-  border: 1px solid skyblue;
-}
+
 /* Styling icon
 /* Facebook */
 .fa-facebook {
@@ -66,16 +61,75 @@ div > div>div#lastPage{
     background: #333;
     color: white;
 }
-
+.fa-youtube{
+  background-color:  	#cc181e;
+  color: #666666;
+}
 /* Adding some nav tag -->*/
 body {
   overflow: hidden;
   background: #111;
 }
+/* Styling last page */
+/*
+div > div>div#lastPage{
+margin: 20px;
+padding: 10px;
+width:100%;
+heigth: 100%;
 
+border: 1px solid blue;
+}
+div > div >div#content1{
+  width: 33.33%;
+  heigth: 400px;
+  border: 1px solid blue;
+}*/
+div > div > div> div#content1{
+  width: 25%;
+  height: 300px;
+  float: right;
+   margin:35px;
+   padding:20px;
+}
+div > div > div> div#map{
+width: 383.5px;
+height: 342px;
+padding: 1px;
+display: relative;
+margin: 10px;
+padding-top: -5px;
+padding-right: -5px;
+}
+div > div > div> div#map> iframe{
+
+padding-bottom: 10px;
+}
+div > div > div> div#touch{
+  width: 25%;
+  height: 35px;
+  float: right;
+  margin:35px 35px 0px auto;
+  padding:20px;
+
+
+}
+div > div > div> div#touch2{
+  display: absolute;
+  font-size: 30px;
+  width: 17%;
+  height: 15px;
+  float: right;
+  margin:35px 35px 0px 10px;
+  padding:20px;
+}
+div > div > div> div#touch2 > h2{
+padding: 0% 20% 0% 55%;
+font-family: sans-serif;
+color: #f4429b
+}
 /* Reset CSS
  * --------------------------------------- */
-
 body,
 div,
 dl,
@@ -233,7 +287,8 @@ p {
  * --------------------------------------- */
 
 #section2 {
-  background-color: #2C3E50;
+  background-color: white;
+  opacity: 0.6;
 }
 
 #section2 h1 {
@@ -243,3 +298,5 @@ p {
 #section2 p {
   opacity: 0.6;
 }
+
+*{cursor: url("Crosshair.cur"),default;}
